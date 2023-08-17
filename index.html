@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/bebbd619fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="max-w-screen-2xl mx-auto">
+        <div class="flex flex-col justify-center items-center border-4 bg-slate-600">
+            <h1 class="text-3xl text-white m-5 font-semibold">My Text Editor</h1>
+            <div>
+                <div class="bg-white border-b-2 border-cyan-400 flex gap-32 py-4 px-20">
+                    <div class="flex flex-row gap-5">
+                        <div>
+                            <button id="bold"><i class="fa-solid fa-bold"></i></button>
+                        </div>
+                        <div>
+                            <button id="italic"><i class="fa-solid fa-italic"></i></button>
+                        </div>
+                        <div>
+                            <button id="underline"><i class="fa-solid fa-underline"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-5">
+                        <div>
+                            <button id="left"><i class="fa-solid fa-align-left"></i></button>
+                        </div>
+                        <div>
+                            <button id="center"><i class="fa-solid fa-align-center"></i></button>
+                        </div>
+                        <div>
+                            <button id="right"><i class="fa-solid fa-align-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-5">
+                        <div>
+                            <input id="font-size" class="w-10" type="number" min="16" max="55">
+                        </div>
+                        <div>
+                            <button id="upper-lower"><i class="fa-solid fa-a"></i></button>
+                        </div>
+                        <div>
+                            <input id="color" type="color" value="#000000">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <textarea id="text-area" class="mb-5 p-4 border-b-2 border-red-600 w-[100%] h-96"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/firstdiv.js"></script>
+</body>
+</html>
